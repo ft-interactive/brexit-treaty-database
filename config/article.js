@@ -11,20 +11,20 @@ export default () => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'Politics and the English Language',
+  headline: 'The Brexit treaty renegotiation checklist',
 
   // summary === standfirst (Summary is what the content API calls it)
   summary: 'Political language is designed to make lies sound truthful' +
            'and murder respectable, and to give an appearance of solidity to pure wind',
 
   topic: {
-    name: 'Starter Kit',
-    url: '/foo',
+    name: 'Brexit',
+    url: 'https://www.ft.com/brexit',
   },
 
   relatedArticle: {
-    text: 'Related article »',
-    url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
+    text: '',
+    url: '',
   },
 
   mainImage: {
@@ -39,8 +39,10 @@ export default () => ({ // eslint-disable-line
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
-    { name: 'Author One', url: '/foo/bar' },
-    { name: 'Author Two' },
+    { name: 'Paul McClean', url: 'https://www.ft.com/stream/authorsId/Q0ItUE01NDMyMQ==-QXV0aG9ycw==' },
+    { name: 'Alex Barker', url: 'https://www.ft.com/stream/authorsId/Q0ItMDAwMDY3Mg==-QXV0aG9ycw==' },
+    { name: 'Chris Campbell', url: 'https://www.ft.com/chris-campbell' },
+    { name: 'Martin Stabe', url: 'https://www.ft.com/martin-stabe' },
   ],
 
   // Appears in the HTML <title>

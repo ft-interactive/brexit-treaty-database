@@ -45,6 +45,7 @@
     "merge-stream": "^1.0.1",
     "nodemon": "^1.11.0",
     "nunjucks": "^3.0.0",
+    "nunjucks-date-filter": "^0.1.1",
     "nunjucks-markdown": "^2.0.1",
     "remove-markdown": "^0.1.0",
     "run-sequence": "^1.2.2",
