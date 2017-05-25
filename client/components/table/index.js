@@ -39,8 +39,15 @@
 //   // descending: true,
 // });
 
-const OTable = require('o-table');
-oTable = new OTable(document.body);
+
+(function() {
+
+  const oTable = require('o-table');
+  oTable.init();
+  oTable.wrap();
+
+}());
+console.log('O-Table loaded.')
 
 /*
   TODO: delete this comment

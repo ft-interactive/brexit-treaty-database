@@ -22,8 +22,9 @@ export function isotime(date) {
 export function strftime(date, format = defaultFTDateFormat) {
   if (!date) {
     return '';
-  } else if (!(date instanceof Date)) {
-    return date;
+  }
+  if (typeof date === 'string') {
+    date = Date.parse(date);
   }
 
   if (formatterCache.has(format)) {

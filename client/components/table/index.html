@@ -1,0 +1,27 @@
+<!-- <input id="table" type="text" class="search" placeholder="Search the treaty database…" data-o-grid-colspan="12 S2 Scenter M4 L4 XL4"/> -->
+
+<table class="o-table" class="o-table o-table--responsive-flat" data-o-component="o-table" style="min-width:100%; text-align: top;">
+	
+<!--<table id="ft1000" class="o-table o-table--responsive-flat" data-o-component="o-table" data-o-table-responsive="flat">-->
+	<thead>
+		<tr>
+		<tr>
+			<th data-o-table-data-type="numeric" class="o-table__cell--numeric" nowrap>Date of signature</th>
+			<th >Treaty</th>
+			<th >Country</th>
+			<th >Category</th>
+			<!--<th class="sortable">Type</th>-->
+		</tr>
+	</thead>
+	<tbody>
+{% for row in table %}
+		<tr>
+			<td style="text-align: left; vertical-align:top;" class="o-table__cell--numeric" nowrap data-o-table-order="{{ row.signature | strftime('%Y%m%d') }}">{% if row.signature %}{{ row.signature | strftime('%-e %B %Y')}}{% endif %}</td>
+			<td style="text-align: left; vertical-align:top;">{% if row.title %}{{ (row.title)}}{% endif %}</td>
+			<td style="text-align: left; vertical-align:top;">{% if row.country %}{{ (row.country)}}{% endif %}</td>
+			<td style="text-align: left; vertical-align:top;">{% if row.category %}{{ (row.category)}}<!--{% if row.subcat %}: {{ (row.subcat)}}{% endif %}-->{% endif %}</td>
+			<!--<td style="text-align: left; vertical-align:top;">{% if row.type %}{{ (row.type)}}{% endif %}</td>-->
+		</tr>
+{% endfor %}
+	</tbody>
+</table>
