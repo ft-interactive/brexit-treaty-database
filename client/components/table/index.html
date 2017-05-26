@@ -1,11 +1,9 @@
 
-<input type="text" id="tableFilter" placeholder="Search for names..">
+<!--<input type="text" id="tableFilter" placeholder="Search for names..">-->
 
-
-<!--  <input id="myInput" type="text" class="search" placeholder="Type to search the treaty list …" data-o-grid-colspan="12 S2 Scenter M4 L4 XL4" onkeyup="myFunction()" placeholder="Search for names.."/> -->
+ <input id="tableFilter" type="text" class="search" placeholder="Type to search the treaty list …" data-o-grid-colspan="12 S2 Scenter M4 L4 XL4" onkeyup="myFunction()" placeholder="Search for names.."/>
 
 <table id="treatyTable" class="o-table o-table--responsive-flat" data-o-component="o-table" style="text-align: top;">
-
 <!--<table id="ft1000" class="o-table o-table--responsive-flat" data-o-component="o-table" data-o-table-responsive="flat">-->
 	<thead>
 		<tr>
@@ -14,7 +12,7 @@
 			<th >Treaty</th>
 			<th >Country</th>
 			<th >Category</th>
-			<!--<th class="sortable">Type</th>-->
+			<th class="sortable">Type</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -24,7 +22,7 @@
 			<td style="text-align: left; vertical-align:top;">{% if row.title %}{{ (row.title)}}{% endif %}</td>
 			<td style="text-align: left; vertical-align:top;">{% if row.country %}{{ (row.country)}}{% endif %}</td>
 			<td style="text-align: left; vertical-align:top;">{% if row.category %}{{ (row.category)}}<!--{% if row.subcat %}: {{ (row.subcat)}}{% endif %}-->{% endif %}</td>
-			<!--<td style="text-align: left; vertical-align:top;">{% if row.type %}{{ (row.type)}}{% endif %}</td>-->
+			<td style="text-align: left; vertical-align:top;">{% if row.type %}{{ (row.type)}}{% endif %}</td>
 		</tr>
 {% endfor %}
 	</tbody>

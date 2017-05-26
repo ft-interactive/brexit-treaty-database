@@ -14,7 +14,7 @@ export default () => ({ // eslint-disable-line
   headline: 'The Brexit treaty renegotiation checklist',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'The complete list of 759 treaties and international agreements that Britain will need to renegotiate after Brexit',
+  summary: 'The complete list of 759 treaties and international agreements that Britain will lose after Brexit',
 
   topic: {
     name: 'Brexit',
