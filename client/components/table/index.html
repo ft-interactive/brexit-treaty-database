@@ -1,26 +1,5 @@
- <script>
-function tableFilter() {
-  // Declare variables
-  var input = document.getElementById("tableFilter");
-  var filter = input.value.toUpperCase();
-  var rows = document.querySelectorAll("#treatyTable tr");
-  // var columns = [0,2,4];
-  // var columnSelector = columns.map(function(c){
-  //   return 'td:nth-child('+c+')';
-  // }).join(',')
 
-  rows.forEach( function(row){
-  //var searchableText = row.querySelectorAll(columnSelector).textContent.toUpperCase();
-    var searchableText = row.textContent.toUpperCase();
-    if(searchableText.indexOf(filter) > -1){
-      row.style.display = "";
-    }else{
-      row.style.display = "none";
-    }
-  });
-}</script>
-
-<input type="text" id="tableFilter" onkeyup="tableFilter()" placeholder="Search for names..">
+<input type="text" id="tableFilter" placeholder="Search for names..">
 
 
 <!--  <input id="myInput" type="text" class="search" placeholder="Type to search the treaty list …" data-o-grid-colspan="12 S2 Scenter M4 L4 XL4" onkeyup="myFunction()" placeholder="Search for names.."/> -->
