@@ -10,3 +10,6 @@ document.querySelector('input#tableFilter')
       }
     });
   };
+
+const OTable = require('o-table');
+oTable = new OTable(document.body);
