@@ -30,7 +30,7 @@ export default () => ({ // eslint-disable-line
     title: '',
     description: '',
     credit: '',
-    url: 'https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fplaceholdit.imgix.net%2F~text%3Ftxtsize%3D33%26txt%3DMasterImage%26w%3D700%26h%3D394?source=ig&width=700',
+    url: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A190b7498-4235-11e7-82b6-896b95f30f58?source=ig&width=700',
     width: 2048, // ensure correct width
     height: 1152, // ensure correct height
   },
@@ -57,39 +57,39 @@ export default () => ({ // eslint-disable-line
         Twitter card docs:
         https://dev.twitter.com/cards/markup
   */
-  twitterCard: 'summary',
+  twitterCard: 'summary_large_image cards',
 
   /*
   TODO: Do you want to tweak any of the
         optional social meta data?
   */
   // General social
-  // socialImage: '',
-  // socialHeadline: '',
-  // socialDescription: '',
-  // twitterCreator: '@author's_account', // shows up in summary_large_image cards
+  socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A190b7498-4235-11e7-82b6-896b95f30f58?source=ig&width=1440',
+  socialHeadline: '759 treaties Britain will lose after Brexit',
+   socialDescription: 'The Brexit treaty renegotiation checklist',
+   twitterCreator: '@ft', // shows up in summary_large_image cards
 
   // TWEET BUTTON CUSTOM TEXT
-  // tweetText: '',
-  // twitterRelatedAccounts: ['authors_account_here', 'ftdata'], // Twitter lists these as suggested accounts to follow after a user tweets (do not include @)
+  tweetText: '759 treaties and international agreements Britain will lose after Brexit',
+  twitterRelatedAccounts: ['PSMcClean', 'alexebarker'], // Twitter lists these as suggested accounts to follow after a user tweets (do not include @)
 
   // Fill out the Facebook/Twitter metadata sections below if you want to
   // override the General social options above
 
   // TWITTER METADATA (for Twitter cards)
-  // twitterImage: '',
-  // twitterHeadline: '',
-  // twitterDescription: '',
+  twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A190b7498-4235-11e7-82b6-896b95f30f58?source=ig&width=1440',
+ twitterHeadline: '759 treaties  Britain will lose after Brexit',
+  twitterDescription: 'The Brexit treaty renegotiation checklist',
 
   // FACEBOOK
-  // facebookImage: '',
-  // facebookHeadline: '',
-  // facebookDescription: '',
+  facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A190b7498-4235-11e7-82b6-896b95f30f58?source=ig&width=1440',
+   facebookHeadline: '759 treaties Britain will lose after Brexit',
+   facebookDescription: 'The Brexit treaty renegotiation checklist',
 
   //ADVERTISING
   ads: {
     // ad unit hierarchy makes ads more granular. Start with ft.com and /companies /markets /world as appropriate to your story
-    gptAdunit: 'ft.com/companies/european',
+    gptAdunit: 'ft.com/world/europe',
     // granular targeting is optional and will be specified by the ads team
     dftTargeting: '',
   },
