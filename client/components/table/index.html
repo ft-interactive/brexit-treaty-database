@@ -1,6 +1,32 @@
-<!-- <input id="table" type="text" class="search" placeholder="Search the treaty database…" data-o-grid-colspan="12 S2 Scenter M4 L4 XL4"/> -->
+ <script>
+function tableFilter() {
+  // Declare variables 
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("tableFilter");
+  filter = input.value.toUpperCase();
+  console.log(filter);
+  table = document.getElementById("treatyTable");
+  tr = table.getElementsByTagName("tr");
 
-<table class="o-table" class="o-table o-table--responsive-flat" data-o-component="o-table" style="min-width:100%; text-align: top;">
+  // Hide rows not matching filter
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}</script>
+
+<input type="text" id="tableFilter" onkeyup="tableFilter()" placeholder="Search for names..">
+
+
+<!--  <input id="myInput" type="text" class="search" placeholder="Type to search the treaty list …" data-o-grid-colspan="12 S2 Scenter M4 L4 XL4" onkeyup="myFunction()" placeholder="Search for names.."/> -->
+
+<table id="treatyTable" class="o-table o-table--responsive-flat" data-o-component="o-table" style="text-align: top;">
 	
 <!--<table id="ft1000" class="o-table o-table--responsive-flat" data-o-component="o-table" data-o-table-responsive="flat">-->
 	<thead>
@@ -25,3 +51,5 @@
 {% endfor %}
 	</tbody>
 </table>
+
+

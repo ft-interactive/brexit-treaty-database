@@ -1,7 +1,30 @@
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
-console.log('begin search load');
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbkop</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Koniglich Essen</td>
+    <td>Germany</td>
+  </tr>
+</table>
 
-(function myFunction() {
+<script>
+function myFunction() {
   // Declare variables 
   var input, filter, table, tr, td, i;
   input = document.getElementById("myInput");
@@ -20,16 +43,4 @@ console.log('begin search load');
       }
     } 
   }
-});
-
-
-console.log('begin o-table load');
-
-(function() {
-
-  const oTable = require('o-table');
-  oTable.wrap();
-
-}());
-
-console.log('o-table loaded');
+}</script>
