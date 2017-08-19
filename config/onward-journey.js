@@ -1,6 +1,5 @@
 export default () => ({
   relatedContent: [
-    { rows: 1, list: 'thing/NDdiMzAyNzctMTRlMy00Zjk1LWEyZjYtYmYwZWIwYWU2NzAy-VG9waWNz' },
-    { rows: 1, list: 'thing/MTcw-U2VjdGlvbnM=' },
+    { rows: 2, list: 'thing/05bfed9c-e2aa-314d-99c0-d864f1c91428' },
   ],
 });
